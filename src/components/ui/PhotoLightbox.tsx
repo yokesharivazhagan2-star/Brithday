@@ -130,6 +130,8 @@ export const PhotoLightbox: React.FC<PhotoLightboxProps> = ({
                 isZoomed ? 'scale-125 cursor-zoom-out' : 'scale-100 cursor-zoom-in'
               }`}
               onClick={() => setIsZoomed(!isZoomed)}
+              loading="eager"
+              decoding="async"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: isZoomed ? 1.25 : 1 }}
               transition={{ duration: 0.4 }}

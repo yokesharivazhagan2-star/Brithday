@@ -81,7 +81,7 @@ export const MemoryLane: React.FC<MemoryLaneProps> = ({ memories, onNext }) => {
                 soundEffects.playPop();
                 setIsLightboxOpen(true);
               }}
-              className="absolute w-72 sm:w-80 bg-[#fdfcf9] p-4 rounded-2xl polaroid-frame cursor-pointer select-none text-zinc-800 shadow-2xl border border-amber-900/10"
+              className="absolute w-72 sm:w-80 max-w-[88vw] bg-[#fdfcf9] p-3.5 sm:p-4 rounded-2xl polaroid-frame cursor-pointer select-none text-zinc-800 shadow-2xl border border-amber-900/10"
               style={{
                 transform: `rotate(${currentMemory.rotation || 0}deg)`,
               }}
@@ -119,7 +119,8 @@ export const MemoryLane: React.FC<MemoryLaneProps> = ({ memories, onNext }) => {
                   src={currentMemory.image}
                   alt={currentMemory.caption}
                   className="w-full h-full object-cover object-top select-none pointer-events-none transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
+                  loading="eager"
+                  decoding="async"
                 />
 
                 {/* Special Overlay per Photo */}

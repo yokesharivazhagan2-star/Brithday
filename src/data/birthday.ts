@@ -1,3 +1,9 @@
+import photo1 from '../assets/kanii/kanii-memory-01.jpg';
+import photo2 from '../assets/kanii/kanii-memory-02.jpg';
+import photo3 from '../assets/kanii/kanii-memory-03.jpg';
+import photo4 from '../assets/kanii/kanii-memory-04.jpg';
+import photo5 from '../assets/kanii/kanii-memory-05.jpg';
+
 export interface MemoryPhoto {
   id: string;
   image: string;
@@ -155,7 +161,7 @@ export const birthdayData: BirthdayConfig = {
   memories: [
     {
       id: "mem-01",
-      image: "/assets/kanii/kanii-memory-01.jpg",
+      image: photo1,
       number: "01",
       tag: "Sibling Bond",
       caption: "One of those moments I'll always remember.",
@@ -165,7 +171,7 @@ export const birthdayData: BirthdayConfig = {
     },
     {
       id: "mem-02",
-      image: "/assets/kanii/kanii-memory-02.jpg",
+      image: photo2,
       number: "02",
       tag: "Garden Whisper",
       caption: "Surrounded by blooms, shining brightest.",
@@ -175,7 +181,7 @@ export const birthdayData: BirthdayConfig = {
     },
     {
       id: "mem-03",
-      image: "/assets/kanii/kanii-memory-03.jpg",
+      image: photo3,
       number: "03",
       tag: "Classic Akka",
       caption: "Grace, confidence and that classic Akka look.",
@@ -185,7 +191,7 @@ export const birthdayData: BirthdayConfig = {
     },
     {
       id: "mem-04",
-      image: "/assets/kanii/kanii-memory-04.jpg",
+      image: photo4,
       number: "04",
       tag: "Pure Joy & Chaos",
       caption: "That smile deserves its own memory.",
@@ -195,7 +201,7 @@ export const birthdayData: BirthdayConfig = {
     },
     {
       id: "mem-05",
-      image: "/assets/kanii/kanii-memory-05.jpg",
+      image: photo5,
       number: "05",
       tag: "With Love",
       caption: "Sorry for being annoying sometimes… here's a flower for you.",
